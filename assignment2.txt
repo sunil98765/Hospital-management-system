@@ -1,0 +1,320 @@
+1.     Write a program to find sum
+of all integers greater than 100 and less than 200 that are divisible by 7.
+
+package Assignment_2;
+
+public class sum {
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+		int sum = 0;
+		System.out.println("All the between 100 to 200 divisible by 7:");
+		for (int i = 100; i < 200; i++) {
+		
+			if (i % 7 == 0) {
+				
+				System.out.print(+i + " ");
+
+				sum = i + sum;
+			}
+
+		}
+		System.out.println();
+		System.out.println("Total sum of all number divisible by 7: " + sum + " ");
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+ 2 Write a program in java that ask three numbers from
+user and print the greatest among three .
+package Assignment_2;
+
+public class greatestamong_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   int a=23,b=45,c=78;
+ int result=  c>(a>b?a:b)?c:(a>b?a:c);
+ System.out.println(" Largest number is="+result);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+3. WAP to find  ASCII value of a character .
+
+
+package Assignment_2;
+
+import java.util.Scanner;
+
+public class ASCII_VALUE {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the character you wish to valued");
+
+		char ch = s.next().charAt(0);
+		System.out.println("the value of character:" + (int) ch);
+	}
+
+}
+
+
+
+4. Java Program to Check Whether an Alphabet is Vowel or Consonant
+
+package Assignment_2;
+
+import java.util.Scanner;
+
+public class consonantorvowel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		System.out.println(" Enter the character");
+		char a =s.next().charAt(0);
+if(a>=65 && a<=90 || a>97&& a<=122) {
+	if(a=='a'|| a=='e'|| a=='i'|| a=='o'|| a=='u'|| a=='A'|| a=='E'|| a=='O'|| a== 'U') {
+
+	System.out.println( "is vovwel ");
+	}
+	
+else
+{
+	System.out.println("is consonat");
+}
+}
+	}}
+
+
+
+
+
+
+5 Check if a Number is Positive or Negative using if else
+package Assignment_2;
+
+import java.util.Scanner;
+
+public class positive_negetive {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter any integer number");
+		int Num=s.nextInt();
+
+	
+
+	// System.out.println(Num>0 ?" num is positive number" :((Num <0? "num is negetive number ":("num is 0"))));
+if (Num>= 0) {
+			System.out.println("\n You have entered POSITIVE Number");
+		}
+		else {
+			System.out.println("\n You have entered NEGATIVE Number");
+		}
+	}
+
+           } 
+
+	
+}
+
+
+
+
+
+
+6 WAP for swapping two numbers without using third variable
+package Assignment_2;
+
+public class swap_without {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int a=56,b=23;
+System.out.println("number before swap "+"a="+ a +" "+"b="+b);
+a=a*b;
+b=a/b;
+a=a/b;
+System.out.println("number after swap "+"a="+ a +" "+"b="+b);
+	}
+
+}
+
+
+
+
+7 Write a program that would print the information (name,
+year of joining, salary, address) of three employees by creating a class named
+'Employee'. The output should be as follows:
+
+
+Name           Year of joining        Address
+
+
+Ashish          
+1994                       64C- WallsStreat
+
+
+Sam               
+2000                     68D- WallsStreat
+
+
+John               
+1999                    26B- WallsStreat 
+
+
+8 WAP to input basic salary of an employee and calculate its
+Gross salary according to following:
+
+
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+
+
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+
+
+Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+
+package Assignment_2;
+import java.util.Scanner;
+
+public class GrossSalary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the salary to calculate gross salary");
+		double salary = s.nextDouble();
+
+		double HRA, DA, Grosssalary;
+
+		if (salary <= 10000) {
+			HRA = salary * .2;
+			DA = salary * .8;
+			Grosssalary = HRA + DA;
+			System.out.println("HRA=" + HRA + "  " + "DA=" + DA + "Gross salary=" +" " + Grosssalary);
+		} else if (salary >= 10000 && salary <20000) {
+			HRA = salary * .25;
+			DA = salary * .9;
+			Grosssalary = HRA + DA;
+			System.out.println("HRA=" + HRA + "  " + "DA=" + DA + "Gross salary=" +" "+ Grosssalary);
+
+		}
+
+		else if (salary > 20000) {
+			HRA = salary * .3;
+
+			DA = salary * .95;
+			Grosssalary = HRA + DA;
+			System.out.println("HRA=" + HRA + "  " + "DA=" + DA + "Gross salary=" +" "+ Grosssalary);
+		}
+
+	}
+}
+
+
+
+Q  8 Q  wap to print even numbers between 10 to 20Q 
+
+
+public class print_even {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("even numbers between 0 to 20 are:");
+for(int i=10;i<20;i+=2) {
+	
+	System.out.print( +i+" ");
+}
+	}
+
+}
+
+
+ 9 wap to check if a number is prime or not
+
+package Assignment_2;
+
+import java.util.Scanner;
+
+public class checkprime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		      int num, i=2, count=0;
+		      Scanner s = new Scanner(System.in);
+		      
+		      System.out.print("Enter a Number: ");
+		      num = s.nextInt();
+		      
+		      while(i<num)
+		      {
+		         if(num%i == 0)
+		         {
+		            count++;
+		            break;
+		         }
+		         i++;
+		      }
+		      
+		      if(count==0)
+		         System.out.println("\n" +num+ " is a Prime Number.");
+		      else
+		         System.out.println("\n" +num+ " is not a Prime Number.");
+		   }
+		
+	}
+
+
+
+
+
+
+Q 10 wap to reverse a given digit   123   321
+package Assignment_2;
+
+import java.util.Scanner;
+
+public class Reverse_num {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the number want to reverse");
+int num=s.nextInt();
+int r=0,a=0;
+while(num>=1)
+{
+	a=num%10;
+	r=r*10+a;
+	num=num/10;
+	}
+System.out.println("Revrse number is:" +r);
+	}
+
+}
